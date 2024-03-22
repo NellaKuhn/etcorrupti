@@ -1,0 +1,56 @@
+{
+  "name": "etcorrupti",
+  "version": "1.0.0",
+  "description": "OSC library for Node.js and the browser, with customizable Plugin API for WebSocket, UDP or bridge networking",
+  "main": "lib/osc.js",
+  "scripts": {
+    "lint": "eslint build.js src/** test/**; exit 0",
+    "test": "mocha test/** --compilers js:babel-register; exit 0",
+    "test:watch": "mocha test/** --compilers js:babel-register --reporter min --watch test/** src/**",
+    "build": "rollem -c rollup.config.js",
+    "docs": "esdoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NellaKuhn/etcorrupti.git"
+  },
+  "keywords": [
+    "osc",
+    "data",
+    "et",
+    "reprehenderit",
+    "aliquid",
+    "websocket",
+    "udp",
+    "doloribus",
+    "illum"
+  ],
+  "author": "CelestinoLowe",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "homepage": "https://github.com/NellaKuhn/etcorrupti.git",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "del": "^2.2.2",
+    "esdoc": "^0.5.2",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "rollem": "^1.8.1",
+    "rollup": "^0.40.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-cleanup": "^0.1.4",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "ws": "^1.1.1"
+  }
+}
